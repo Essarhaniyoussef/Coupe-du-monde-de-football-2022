@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FIFA WORLD CUP Qatar 2022</title>
+    <link rel="icon" href="/images/logo.png" type="png" />
+    <link rel="stylesheet" href="/styless.css" />
+  </head>
+  <body class="page">
+    <!-- HEADER (VOLET 1) -->
+    <header>
+      <div>
+        <img src="/images/logo.png" class="logo" />
+
+        <span
+          ><a href="/index.html" class="title"
+            >FIFA WORLD CUP Qatar 2022</a
+          ></span
+        >
+      </div>
+      <!-- BAR DE NAVIGATION (MENUS/SOUS MENUS) -->
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="/index.html">Acceuil</a></li>
+          <li>
+            <a href="#">Groupes</a>
+            <ul>
+              <li>
+                <a href="/groupesIframes/GroupeA.html" target="groupes"
+                  >&rdca; Groupe A</a
+                >
+              </li>
+              <li>
+                <a href="/groupesIframes/GroupeB.html" target="groupes"
+                  >&rdca; Groupe B</a
+                >
+              </li>
+              <li>
+                <a href="/groupesIframes/GroupeC.html" target="groupes"
+                  >&rdca; Groupe C</a
+                >
+              </li>
+              <li>
+                <a href="/groupesIframes/GroupeD.html" target="groupes"
+                  >&rdca; Groupe D</a
+                >
+              </li>
+              <li>
+                <a href="/groupesIframes/GroupeE.html" target="groupes"
+                  >&rdca; Groupe E</a
+                >
+              </li>
+              <li>
+                <a href="/groupesIframes/GroupeF.html" target="groupes"
+                  >&rdca; Groupe F</a
+                >
+              </li>
+              <li>
+                <a href="/groupesIframes/GroupeG.html" target="groupes"
+                  >&rdca; Groupe G</a
+                >
+              </li>
+              <li>
+                <a href="/groupesIframes/GroupeH.html" target="groupes"
+                  >&rdca; Groupe H</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li><a href="/matches.html" target="equipes">Matchs</a></li>
+          <li><a href="/classement.html" target="joueurs">Classement</a></li>
+          <li><a href="mailto: media@fifa.org">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="volet1slideshow" style="width: 100%">
+      <!--Basic structure of slider-->
+      <div class="slideshow">
+        <!--Area of the images-->
+        <div class="wrapper">
+          <img src="/ads-slideshow/ad1.png" />
+          <img src="/ads-slideshow/ad2.jpg" />
+          <img src="/ads-slideshow/ad3.png" />
+          <img src="/ads-slideshow/ad4.png" />
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTENU DU SITEWEB (VOLET2 - VOLET3 - VOLET4 - VOLET%) -->
+
+    <div class="content">
+      <!-- CONTENU DE CENTRE (VOLET3 - VOLET4) -->
+
+      <main class="contentMain">
+        <!-- CONTENU DU VOLET3 -->
+        <div class="middlecontent">
+          <!-- <iframe src="example.htm" name="page"></iframe>
+        <a href="https://www.example.com" target="page">Example</a> -->
+          <iframe
+            name="equipes"
+            src="/matches.html"
+            frameborder="0"
+            width="100%"
+            height="100%"
+          ></iframe>
+        </div>
+
+        <!-- CONTENU DU VOLET4 -->
+
+        <div class="lowercontent">
+          <iframe
+            name="joueurs"
+            src="/classement.html"
+            frameborder="0"
+            width="100%"
+            height="100%"
+          ></iframe>
+        </div>
+      </main>
+
+      <!-- CONTENU DU VOLET2 -->
+
+      <nav id="volet2" class="nav">
+        <input
+          type="button"
+          value="collapse"
+          onclick="collapse(event)"
+          style="cursor: pointer"
+          background:white;
+          no-repeat
+        />
+        <iframe
+          src="/groupesIframes/GroupeListe.html"
+          name="groupes"
+          frameborder="0"
+          width="100%"
+          height="100%"
+        ></iframe>
+      </nav>
+
+      <!-- CONTENU DU VOLET D'ACTUALITEES (VOLET5) -->
+
+      <aside class="asidee">
+        <input type="button" value="collapse" onclick="collapse(event)" />
+        <iframe
+          src="/news.html"
+          name="news"
+          frameborder="0"
+          height="100%"
+          width="100%"
+        ></iframe>
+      </aside>
+    </div>
+
+    <footer class="volet6">
+      <div class="footer-right">
+        <a href="https://www.facebook.com/fifa" target="_blank"
+          ><i class="fa fa-facebook"
+            ><img src="/images/fb-logo.png" width="20px" /></i
+        ></a>
+        <a href="https://www.instagram.com/fifaworldcup/" target="_blank"
+          ><i class="fa fa-twitter"
+            ><img src="/images/insta-logo.png" width="20px" /></i
+        ></a>
+        <a href="https://twitter.com/FIFAcom" target="_blank"
+          ><i class="fa fa-linkedin"
+            ><img src="/images/twitter-logo.png" width="20px" /></i
+        ></a>
+        <a href="https://www.youtube.com/FIFATV" target="_blank"
+          ><i class="fa fa-github"
+            ><img src="/images/yt-logo.png" width="20px" /></i
+        ></a>
+      </div>
+
+      <div class="footer-left">
+        <p class="footer-links">
+          <a class="link-1" href="/index.html">Home</a>
+
+          <a href="/index.html">About</a>
+
+          <a href="/index.html">Faq</a>
+
+          <a href="mailto: media@fifa.org">Contact</a>
+        </p>
+
+        <p>FIFA &copy; 2022</p>
+      </div>
+    </footer>
+    <script>
+      function collapse(event) {
+        event.target.parentNode.hidden = true;
+      }
+    </script>
+  </body>
+</html>

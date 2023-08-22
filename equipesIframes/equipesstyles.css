@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "FFGoodProNarr Black";
+  src: url(/groupesIframes/font/FFGoodProNarr-Black.woff) format(woff),
+    url(/groupesIframes/font/FFGoodProNarr-Black.woff2) format(woff2);
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  background-color: rgba(0, 0, 0, 0.2);
+  background-image: url("/images/background10.jpg");
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+body {
+  text-align: center;
+}
+
+body::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(37, 37, 37); /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(131, 131, 131); /* color of the scroll thumb */
+  border-radius: 50px; /* roundness of the scroll thumb */
+  border: 2px solid rgb(37, 37, 37); /* creates padding around scroll thumb */
+}

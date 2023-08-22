@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/matches.css" />
+  </head>
+  <body>
+    <div class="container" id="main">
+      <div class="score-card-list">
+        <h3>Wednesday, 30 November 2022</h3>
+
+        <div class="score-card">
+          <span>Australia</span><span>1 - 0</span><span>Denmark</span>
+        </div>
+
+        <div class="score-card">
+          <span>Tunisia</span><span>1 - 0</span><span>France</span>
+        </div>
+
+        <div class="score-card">
+          <span>Poland</span><span>0 - 2</span><span>Argentina</span>
+        </div>
+
+        <div class="score-card">
+          <span>Saudi Arabia</span><span>1 - 2</span><span>Mexico</span>
+        </div>
+      </div>
+
+      <div class="score-card-list">
+        <h3>Thursday, 01 December 2022</h3>
+
+        <div class="score-card">
+          <span>Canada</span><span>1 - 2</span><span>Morocco</span>
+        </div>
+
+        <div class="score-card">
+          <span>Croatia</span><span>0 - 0</span><span>Belgium</span>
+        </div>
+
+        <div class="score-card">
+          <span>Costa Rica</span><span>2 - 4</span><span>Germany</span>
+        </div>
+
+        <div class="score-card">
+          <span>Japan</span><span>2 - 1</span><span>Spain</span>
+        </div>
+      </div>
+
+      <div class="score-card-list">
+        <h3>Friday, 02 December 2022</h3>
+
+        <div class="score-card">
+          <span>Ghana</span><span>0 - 2</span><span>Uruguay</span>
+        </div>
+
+        <div class="score-card">
+          <span>South Korea</span><span>2 - 1</span><span>Portugal</span>
+        </div>
+
+        <div class="score-card">
+          <span>Cameroon</span><span>20:00</span><span>Brazil</span>
+        </div>
+
+        <div class="score-card">
+          <span>Serbia</span><span>20:00</span><span>Switzerland</span>
+        </div>
+      </div>
+      <input type="button" id="add" value="add" onclick="add()" />
+    </div>
+    <script>
+      function add() {
+        document.getElementById("main").innerHTML +=
+          '<div class="score-card-list">' +
+          '<h3><input class="in" type="text" value="date" ><input type="button" value="save" onclick="save()"></h3><div class="score-card">' +
+          '<span><input class="in" type="text" value="team1" style="width:15%" ></span><span style="width:8%"><input class="in" value="score" style="width:8%" type="text" ></span> - <span  style="width:8%"><input class="in"  style="width:8%" value="score" type="text" ></span><span><input class="in" style="width:15%" type="text" value="team2" ></span>' +
+          "</div>" +
+          '<div class="score-card">' +
+          '<span><input class="in" type="text" style="width:15%" value="team1" ></span><span style="width:8%"><input class="in" value="score" style="width:8%" type="text" ></span> - <span  style="width:8%"><input class="in"  style="width:8%" value="score" type="text" ></span><span><input class="in" style="width:15%" type="text" value="team2" ></span>' +
+          "</div>" +
+          '<div class="score-card">' +
+          '<span><input class="in" type="text" style="width:15%" value="team1" ></span><span style="width:8%"><input class="in" value="score" style="width:8%" type="text" ></span> - <span  style="width:8%"><input class="in" value="score"  style="width:8%" type="text" ></span><span><input class="in" type="text" style="width:15%" value="team2" ></span>' +
+          "</div>" +
+          '<div class="score-card">' +
+          '<span><input class="in" type="text" style="width:15%" value="team1" ></span><span style="width:8%"><input class="in" value="score" style="width:8%" type="text" ></span> - <span  style="width:8%"><input class="in" value="score"  style="width:8%" type="text" ></span><span><input class="in" type="text" style="width:15%" value="team2" ></span>' +
+          "</div>" +
+          "</div>";
+      }
+      function save() {
+        var el = document.getElementsByClassName("in");
+        for (var i = el.length - 1; i >= 0; i--) {
+          console.log(i);
+          console.log(el);
+          var txt = el[i].value;
+          var prnt = el[i].parentNode;
+          prnt.removeChild(el[i]);
+          prnt.innerHTML = txt;
+        }
+      }
+    </script>
+  </body>
+</html>

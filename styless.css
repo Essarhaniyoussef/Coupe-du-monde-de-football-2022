@@ -1,0 +1,335 @@
+@font-face {
+  font-family: "Qatar 2022";
+  src: url(/qatar-2022-font/Qatar2022-Medium.woff) format(woff);
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.page {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  margin: 0;
+}
+
+.content {
+  display: flex;
+  flex: 0 0 88vh;
+}
+
+.contentMain {
+  flex: 1;
+  background: lightblue;
+  display: flex;
+  flex-direction: row;
+  /* default setting; can be omitted */
+  flex-wrap: wrap;
+}
+
+.nav,
+.ads {
+  /* 12em is the width of the columns */
+  flex: 0 0 20%;
+}
+
+.nav {
+  /* put the nav on the left */
+  order: -1;
+  background: #250629;
+}
+
+.ads {
+  background: green;
+}
+
+header,
+footer {
+  flex: 0 0 10vh;
+}
+
+header {
+  /* position: fixed;
+    top: 0;
+    left: 0;
+    right: 0; */
+
+  position: sticky;
+  top: 0;
+  padding: 40px;
+
+  /* background-image: url("/images/banner3.webp");
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center; */
+  background-color: #500d59;
+  color: white;
+
+  font-family: "Qatar 2022";
+
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px 3%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+header .title {
+  font-weight: bold;
+  font-size: 25px;
+  color: white;
+}
+
+.logo {
+  width: 70px;
+  padding-right: 0;
+  margin-right: 40px;
+  vertical-align: middle;
+}
+
+header .nav-bar ul {
+  list-style: none;
+}
+
+header .nav-bar ul li {
+  position: relative;
+  float: left;
+}
+
+header .nav-bar ul li a {
+  font-size: 20px;
+  padding: 20px;
+  color: white;
+}
+
+header .nav-bar ul li a:hover {
+  background: rgb(109, 1, 120);
+  color: white;
+  border-radius: 10px;
+}
+
+header .nav-bar ul li ul {
+  position: absolute;
+  top: 50px;
+  left: -3px;
+  width: 170px;
+  background: rgb(109, 1, 120);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  border: 2px white solid;
+
+  display: none;
+}
+
+header .nav-bar ul li ul li {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+header .nav-bar ul li:focus-within > ul {
+  display: initial;
+}
+
+/*Nested Content*/
+
+.asidee {
+  width: 22%;
+  background-color: rgb(0, 0, 0);
+}
+
+.middlecontent {
+  flex: 0 0 100%;
+  background-color: rgb(0, 0, 0);
+}
+
+.lowercontent {
+  flex: 0 0 100%;
+  background-color: rgb(15, 15, 15);
+}
+
+.volet6 {
+  background-color: rgba(0, 0, 0, 0.8);
+  background-image: url("/images/Qatar-2022-s-32-teams-graphic.webp");
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font-family: "Qatar 2022";
+  padding: 45px 50px;
+}
+
+.volet6 .footer-left p {
+  color: #ffffff;
+  font-size: 14px;
+  margin: 0;
+}
+/* Footer links */
+
+.volet6 p.footer-links {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 10px;
+  padding: 0;
+  transition: ease 0.25s;
+}
+
+.volet6 p.footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+  transition: ease 0.25s;
+}
+
+.volet6 .footer-links a:before {
+  content: "·";
+  font-size: 20px;
+  left: 0;
+  color: rgb(0, 0, 0);
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.volet6 .footer-links .link-1:before {
+  content: none;
+}
+
+.volet6 .footer-right {
+  float: right;
+  margin-top: 6px;
+  max-width: 180px;
+}
+
+.volet6 .footer-right a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: #500d59;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 3px;
+  transition: all 0.25s;
+}
+
+.volet6 .footer-right a:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+}
+
+.volet6 p.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries */
+
+@media (max-width: 600px) {
+  .volet6 .footer-left,
+  .volet6 .footer-right {
+    text-align: center;
+  }
+  .volet6 .footer-right {
+    float: none;
+    margin: 0 auto 20px;
+  }
+  .volet6 .footer-left p.footer-links {
+    line-height: 1.8;
+  }
+}
+
+body::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #250629; /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(190, 190, 190); /* color of the scroll thumb */
+  border-radius: 10px; /* roundness of the scroll thumb */
+  border: 3px solid #500d59; /* creates padding around scroll thumb */
+}
+
+/*The webpage has been designed*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.volet1slideshow {
+  background-color: #35093b;
+}
+
+/*Basic structure of slider*/
+.slideshow {
+  width: 1700px;
+  height: 170px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: -1px 5px 15px black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/*Area of images*/
+.wrapper {
+  display: flex;
+  animation: slide 16s infinite;
+}
+
+.wrapper img,
+.wrapper a img {
+  height: 100%;
+  width: 100%;
+}
+/*Animation activated by keyframes*/
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(0);
+  }
+  30% {
+    transform: translateX(-1700px);
+  }
+  50% {
+    transform: translateX(-1700px);
+  }
+  55% {
+    transform: translateX(-3400px);
+  }
+  75% {
+    transform: translateX(-3400px);
+  }
+  80% {
+    transform: translateX(-5100px);
+  }
+  100% {
+    transform: translateX(-5100px);
+  }
+}

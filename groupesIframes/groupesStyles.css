@@ -1,0 +1,82 @@
+@font-face {
+  font-family: "FFGoodProNarr Black";
+  src: url(/groupesIframes/font/FFGoodProNarr-Black.woff) format(woff),
+    url(/groupesIframes/font/FFGoodProNarr-Black.woff2) format(woff2);
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  background-image: url("/images/background5.jpg");
+  background-color: rgb(0, 0, 0, 0.8);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+table tr th {
+  border: 1px rgb(0, 0, 0) solid;
+  font-size: 1.3em;
+  background-color: #500d59;
+  color: white;
+  padding: 5px;
+}
+
+table tr td {
+  border-top: 5px rgb(255, 255, 255) solid;
+  font-size: 1.3em;
+  background-color: rgb(190, 190, 190);
+  padding: 5px;
+}
+
+table tr td a {
+  text-decoration: none;
+  color: #500d59;
+}
+
+table tr td a:hover {
+  background-color: #500d59;
+  color: white;
+}
+
+table tr td img,
+table tr th img {
+  height: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30vh;
+  width: 80%;
+  color: #500d59;
+  font-weight: bold;
+  font-family: "FFGoodProNarr Black";
+}
+
+.liste-groupe {
+  margin-top: 30px;
+}
+
+.liste-groupe:last-child {
+  margin-bottom: 30px;
+}
+
+body::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #250629; /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(190, 190, 190); /* color of the scroll thumb */
+  border-radius: 10px; /* roundness of the scroll thumb */
+  border: 3px solid #500d59; /* creates padding around scroll thumb */
+}
+.ipt {
+  width: 5%;
+}

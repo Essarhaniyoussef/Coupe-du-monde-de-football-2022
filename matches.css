@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "FFGoodPro Medium";
+  src: url(/equipesIframes/maroc-joueurs/FFGoodProMedium/FFGoodPro-Medium.woff)
+      format(woff),
+    url(/equipesIframes/maroc-joueurs/FFGoodProMedium/FFGoodPro-Medium.woff2)
+      format(woff2);
+  font-weight: normal;
+  font-style: normal;
+}
+
+span {
+  padding: 30px;
+}
+
+html {
+  text-align: center;
+  font-family: "FFGoodPro Medium";
+  background-color: rgb(14, 14, 14);
+  color: white;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-size: 1.1rem;
+}
+
+.score-card {
+  padding-bottom: 5px;
+  padding-top: 5px;
+  border-top: 1px rgb(53, 53, 53) solid;
+}
+
+.score-card:hover {
+  background-color: white;
+  color: black;
+}
+
+.score-card:last-child {
+  border-bottom: 1px rgb(53, 53, 53) solid;
+}
+
+.score-card-list {
+  margin-bottom: 50px;
+}
+
+h3 {
+  color: #000000;
+  background-color: rgb(122, 122, 122);
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-radius: 50px;
+}
+
+body::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(37, 37, 37); /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(131, 131, 131); /* color of the scroll thumb */
+  border-radius: 50px; /* roundness of the scroll thumb */
+  border: 2px solid rgb(37, 37, 37); /* creates padding around scroll thumb */
+}
